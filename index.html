@@ -19,6 +19,15 @@
 :root { --c-canvas: #1e1815; --c-surface: #2a221d; --c-ink: #f2e9dd; --c-ink-soft: #b9ab9b; --c-accent: #c8a25c; --c-accent-ink: #1f170f; --c-accent-deep: #c8a25c; --f-display: "Unbounded", "Arial Black", system-ui, sans-serif; --f-text: "Golos Text", "Segoe UI", system-ui, sans-serif; --h1k: 0.8; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<style>
+.s-extras { display: grid; gap: 28px; }
+.s-extras__quote { margin: 0; padding: 28px 24px; background: var(--c-surface); border: 1px solid var(--hair); border-left: 4px solid var(--c-accent); border-radius: var(--r); display: grid; gap: 14px; max-width: 52em; }
+.s-extras__quote blockquote { margin: 0; font-family: var(--f-display); font-weight: 500; font-size: clamp(1.15rem, 2.2vw, 1.55rem); line-height: 1.4; }
+.s-extras__who { font-size: .85rem; color: var(--c-ink-soft); }
+.s-extras__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.s-extras__list li { padding: 10px 16px; border-radius: 999px; border: 1px solid var(--hair); background: var(--c-surface); font-size: .95rem; }
+.s-extras__note { color: var(--c-ink-soft); font-size: .95rem; max-width: 52em; }
+</style>
 </head>
 <body class="s-prod" id="top" data-wa="79827172040" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
@@ -82,6 +91,20 @@
       </ul>
     </div></div>
     <p class="s-note">Покраска бороды к комплексу – плюс 400 ₽. Прайс на карточке давно не обновлялся: точную цену подтвердим при записи.</p>
+  </section>
+
+  <section class="s-section s-reveal" id="extras">
+    <header class="s-section__head"><h2>Что клиенты отмечают сверх стрижки</h2><p>Список составлен по отзывам на Яндекс.Картах.</p></header>
+    <div class="s-extras">
+      <figure class="s-extras__quote">
+        <blockquote>«Всегда работают быстро, и доп услуги по стрижке бровей, удалению волос из носа, маска для лица и парфюм в конце - это ВАУ! Я такого нигде не видел.»</blockquote>
+        <figcaption class="s-extras__who">Андрей Ободяников · 5 августа 2026</figcaption>
+      </figure>
+      <ul class="s-extras__list">
+        <li>Стрижка бровей</li><li>Удаление волос из носа</li><li>Огонь: обжиг волос на ушах</li><li>Массаж</li><li>Маска для лица</li><li>Воск для депиляции</li><li>Парфюм в конце</li>
+      </ul>
+      <p class="s-extras__note">В прайсе на карточке этих услуг нет. Что из этого входит и сколько стоит – уточним при записи.</p>
+    </div>
   </section>
 
   <section class="s-section s-reveal">
